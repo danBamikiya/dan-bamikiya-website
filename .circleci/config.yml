@@ -4,7 +4,7 @@ version: 2.1
 orbs:
   # The Node.js orb contains a set of prepackaged CircleCI configuration
   # Orbs reduce the amount of configuration required for common tasks.
-  heroku: circleci/heroku@1.2.4
+  heroku: circleci/heroku@0.0.10
 
 workflows:
   heroku_deploy:
