@@ -1,0 +1,152 @@
+%heading {
+  margin-bottom: unset;
+  line-height: 0;
+}
+
+%h1 {
+  font-size: 8rem;
+  font-family: $hero-text-font;
+  font-weight: 500;
+  color: #844d6a;
+  opacity: 0.5;
+}
+
+%h6 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+%blast {
+  display: inline-block;
+  transition: all 0.3s ease-out 0s;
+
+  &:hover {
+    -webkit-text-fill-color: $purple-color;
+    animation: rubberBand 1s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+%link {
+  position: relative;
+  transition: color 0.3s ease-in;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 11%;
+    height: 1%;
+    left: 0;
+    width: 103%;
+    transition: height 0.3s ease-out;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    height: 85%;
+  }
+}
+
+%span {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: fit-content;
+  place-self: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    width: 10rem;
+    height: 3px;
+    border-radius: 0.8rem;
+    background-color: lighten($black-color, 25%);
+  }
+
+  &::after {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 100%;
+    bottom: -0.95rem;
+    background-color: lighten($black-color, 25%);
+  }
+}
+
+%glass {
+  font-family: "Yusei Magic", "Montserrat", sans-serif;
+  position: absolute;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transform: scale(0);
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    span {
+      width: 100px;
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    p {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0.2;
+  }
+}

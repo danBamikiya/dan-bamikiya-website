@@ -2,35 +2,77 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-const Image = () => {
+const Image = ({ name, alt, width, height, style }) => {
   const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+    query AllImages {
+      allImagesWithoutSVGExtension: allFile(
+        filter: {
+          sourceInstanceName: { eq: "images" }
+          extension: { regex: "/jpeg|jpg|png|gif/" }
+        }
+      ) {
+        nodes {
+          publicURL
+          extension
+          sharp: childImageSharp {
+            fluid(maxWidth: 1416, quality: 80, webpQuality: 90) {
+              originalName
+              ...GatsbyImageSharpFluid_withWebp
+            }
           }
+        }
+      }
+      allImagesWithSVGExtension: allFile(
+        filter: {
+          sourceInstanceName: { eq: "images" }
+          extension: { eq: "svg" }
+        }
+      ) {
+        nodes {
+          publicURL
+          extension
         }
       }
     }
   `)
 
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
-    return <div>Picture not found</div>
+  const render = (allImagesWithoutSVGExtension, allImagesWithSVGExtension) => {
+    const isNameWithSVGExtension = name.indexOf("svg") !== -1
+    const renderImageWithSVGExtension = () => {
+      const image = allImagesWithSVGExtension?.nodes.find(
+        ({ publicURL }) => publicURL && publicURL.indexOf(name) !== -1
+      )
+      return image ? (
+        <img src={image.publicURL} alt={alt} style={style} loading="lazy" />
+      ) : (
+        <div>Picture not found</div>
+      )
+    }
+
+    const renderImageWithoutSVGExtension = () => {
+      const image = allImagesWithoutSVGExtension?.nodes.find(
+        ({ publicURL }) => publicURL && publicURL.indexOf(name) !== -1
+      )
+      return image && image.sharp && image.sharp.fluid ? (
+        <Img
+          fluid={image.sharp.fluid}
+          alt={alt}
+          width={width}
+          height={height}
+        />
+      ) : (
+        <div>Picture not found</div>
+      )
+    }
+    return isNameWithSVGExtension
+      ? renderImageWithSVGExtension()
+      : renderImageWithoutSVGExtension()
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return render(
+    data?.allImagesWithoutSVGExtension,
+    data?.allImagesWithSVGExtension
+  )
 }
 
 export default Image

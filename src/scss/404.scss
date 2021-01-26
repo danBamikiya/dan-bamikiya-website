@@ -1,0 +1,32 @@
+@import "config";
+
+main {
+  .not-found-h1 {
+    font-size: 16vh;
+    background: $primary-background-gradient;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 1.45rem;
+
+    &.blast {
+      @extend %blast;
+    }
+  }
+
+  .not-found-home-link {
+    text-align: center;
+    width: 76px;
+    width: fit-content;
+    left: 50%;
+    color: mediumseagreen;
+    @extend %link;
+    &::after {
+      background-color: mediumspringgreen;
+    }
+    z-index: 2;
+  }
+}
+
+@import "utilities";

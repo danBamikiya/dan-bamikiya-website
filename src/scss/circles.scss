@@ -1,0 +1,53 @@
+%circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+$circles: 3;
+@for $i from 1 through $circles {
+  .page-circle-#{$i} {
+    z-index: -1;
+  }
+}
+
+.page-circle-1 {
+  @extend %circle;
+  width: 20vw;
+  height: 20vw;
+  background-color: rgba(188, 58, 128, 0.1);
+  top: 51vh;
+  left: 3vw;
+}
+
+.page-circle-2 {
+  @extend %circle;
+  width: 22vw;
+  height: 22vw;
+  background-color: rgba(52, 87, 178, 0.1);
+  top: 0vh;
+  left: 35vw;
+}
+
+.page-circle-3 {
+  position: absolute;
+  overflow: hidden;
+  width: 45vw;
+  height: 45vw;
+  bottom: 0;
+  right: 0;
+}
+
+.page-circle-3::before {
+  content: "";
+  @extend %circle;
+  transform: translate(40%, 40%);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(52, 87, 178, 0.1);
+}
+
+@media (max-width: 600px) {
+  .page-circle-2 {
+    top: 10vw;
+  }
+}

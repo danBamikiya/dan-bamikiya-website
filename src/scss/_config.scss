@@ -1,0 +1,45 @@
+/* import fonts from fonts.scss file */
+// @import url(./fonts.min.css);
+
+$hero-text-font: "Ricky Brandon", sans-serif;
+$header-font: "Suez One", sans-serif;
+$light-color: snow;
+$white-color: white;
+$purple-color: #5c63ab;
+$twitter-color: #38a1f3;
+$linkedin-color: #2867b2;
+$dark-color: #333;
+$darker-color: #1e1e24;
+$black-color: #000;
+$primary-background-color: rgb(240, 240, 240);
+$primary-background-gradient: linear-gradient(
+  to left,
+  #33ccff 0%,
+  #ff99cc 100%
+);
+$primary-border-radius: 50%;
+
+// Set text color based on bg
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $black-color;
+  } @else {
+    @return $white-color;
+  }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background: $color;
+  color: set-text-color($color);
+}
+
+// body {
+//   // background-color: #ffe5d9 !important;
+//   // background-color: #cb997e !important;
+//   // background-color: #1d3557 !important;
+//   // background-color: #a8dadc !important;
+//   // background-color: #fca311 !important;
+//   // background-color: #ffadad !important;
+//   // background-color: #000000 !important;
+// }

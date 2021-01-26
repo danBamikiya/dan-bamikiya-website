@@ -1,0 +1,72 @@
+@import "config";
+$cursor-primary-scale: scale(1);
+$cursor-rotate: rotate(45deg);
+
+.border-color {
+  border-color: white !important;
+}
+
+%cursor {
+  width: 30px;
+  height: 30px;
+}
+
+.cursor {
+  @extend %cursor;
+  border: 1px solid $black-color;
+  border-radius: 5%;
+  position: fixed;
+  pointer-events: none;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  z-index: 1000;
+  transform: $cursor-rotate $cursor-primary-scale;
+}
+
+.cursor::after {
+  content: "";
+  @extend %cursor;
+  position: absolute;
+  border: 5px solid #ff99cc;
+  border-radius: $primary-border-radius;
+  opacity: 0.3;
+  top: -1px;
+  left: -1px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid $white-color;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: $cursor-rotate $cursor-primary-scale;
+  }
+  to {
+    transform: $cursor-rotate scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: $cursor-primary-scale;
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: $cursor-rotate $cursor-primary-scale;
+    opacity: 0;
+  }
+  50% {
+    transform: $cursor-rotate scale(2);
+  }
+  100% {
+    transform: $cursor-rotate $cursor-primary-scale;
+  }
+}

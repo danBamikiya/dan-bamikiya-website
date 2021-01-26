@@ -1,42 +1,61 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCog, faInbox } from "@fortawesome/free-solid-svg-icons"
+import { faUser, faEye } from "@fortawesome/free-regular-svg-icons"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+const Header = ({ headerStyle }) => (
+  <header>
+    <Link to="/" title="Home" aria-label="Home">
+      {" "}
+      <p className="logo-text">D</p>
+    </Link>
+
+    <div style={headerStyle}>
+      <nav className="menu" role="navigation">
+        <input
+          type="checkbox"
+          href="#"
+          className="menu-open"
+          name="menu-open"
+          id="menu-open"
+        />
+        <label className="menu-open-button" htmlFor="menu-open">
+          <span className="hamburger hamburger-1"></span>
+          <span className="hamburger hamburger-2"></span>
+          <span className="hamburger hamburger-3"></span>
+        </label>
+
         <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          to="/portfolio/#Contact"
+          className="menu-item"
+          aria-label="Contact"
         >
-          {siteTitle}
+          <FontAwesomeIcon icon={faInbox} />
+          <span>Contact</span>
         </Link>
-      </h1>
+        <Link to="/portfolio" className="menu-item" aria-label="Portfolio">
+          <FontAwesomeIcon icon={faEye} />
+          <span>Work</span>
+        </Link>
+        <Link to="/about/#Skills" className="menu-item" aria-label="Skills">
+          <FontAwesomeIcon icon={faCog} />
+
+          <span>Skills</span>
+        </Link>
+        <Link to="/about" className="menu-item" aria-label="About">
+          <FontAwesomeIcon icon={faUser} />
+          <span>About</span>
+        </Link>
+        <span className="transparent-cover"></span>
+      </nav>
     </div>
   </header>
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+  mainStyle: PropTypes.object,
 }
 
 export default Header

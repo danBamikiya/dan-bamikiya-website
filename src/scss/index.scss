@@ -1,0 +1,246 @@
+@import "config";
+
+.icons {
+  color: $darker-color;
+  margin-bottom: 0.4rem;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1.5rem 0 0 0;
+  height: 100vh;
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.home-wrapper {
+  max-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+hr {
+  background: $darker-color;
+  border: 2px;
+  width: 1px;
+  height: 7vh;
+  margin-bottom: unset;
+}
+
+.image-wrapper {
+  align-self: center;
+  position: relative;
+  vertical-align: middle;
+  width: 22rem;
+  transform: translate(10px, 10px);
+}
+
+.chat-bubble {
+  position: absolute;
+  right: -3rem;
+  top: -4rem;
+  background-color: $white-color;
+  border: 8px solid $light-color;
+  border-radius: 30px;
+  padding: 8px;
+  display: inline-block;
+  width: 12rem;
+  height: auto;
+  transform-origin: 0% 100%;
+  transform: scale(0);
+  will-change: transform;
+  animation: animation-chat-bubble 0.25s forwards;
+  animation-delay: 1.6s;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 165px;
+    top: 96px;
+    border: 12px solid;
+    border-color: $light-color transparent transparent $light-color;
+    transform: rotate(10deg) scale(0);
+    transform-origin: 0% 100%;
+    animation: animation-chat-bubble 0.25s forwards;
+    animation-delay: 1.6s;
+  }
+}
+
+@keyframes animation-chat-bubble {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.home-nav {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  top: 107px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top;
+  transition: transform 1s ease-out;
+  animation: animate-home-nav 1s ease-out forwards;
+}
+@keyframes animate-home-nav {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(170px);
+    opacity: 1;
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-self: center;
+  z-index: 1;
+  transform: translate(75px, 52px);
+  user-select: none;
+
+  h1 {
+    font-size: 7.6rem;
+    font-family: "Signika";
+    background: $primary-background-gradient;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX(10px);
+    width: fit-content;
+    margin-bottom: unset;
+    line-height: 1;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: inline;
+
+    &:nth-child(1) {
+      padding-bottom: 1px;
+      transform: translateY(34px);
+    }
+    &:nth-child(2) {
+      padding-top: 0;
+      transform: translate(82px, 0px);
+    }
+  }
+}
+
+.nav.icons {
+  &:hover svg {
+    transition: all 0.2s ease-out 0s;
+    opacity: 0;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &::after {
+    content: "";
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  &:first-child::after {
+    content: "ABOUT";
+  }
+  &:nth-child(2)::after {
+    content: "SKILLS";
+  }
+  &:nth-child(3)::after {
+    content: "MY WORK";
+    width: 67px;
+    transform: translateX(-40px);
+  }
+  &:nth-child(4)::after {
+    content: "CONTACT";
+    transform: translateX(-40px);
+  }
+}
+
+.social.icons {
+  transition: color 500ms;
+  &:nth-child(1):hover {
+    color: $dark-color;
+  }
+  &:nth-child(2):hover {
+    color: $linkedin-color;
+  }
+  &:nth-child(3):hover {
+    color: $twitter-color;
+  }
+}
+
+.social.icons:hover ~ .social-icons-title > .social-icons-title-text {
+  transform: rotate(90deg) translateX(31px) translateY(0px);
+  visibility: visible;
+  transition: transform 0.4s ease-out;
+}
+
+.social-icons-title > hr {
+  transform: translateX(-36px);
+  visibility: visible;
+  transition: transform 0.5s ease-out;
+}
+
+.social.icons:hover ~ .social-icons-title > hr {
+  transform: translateX(-22px);
+  visibility: hidden;
+  transition: transform 0.5s ease-out;
+}
+
+.social-icons-title {
+  display: flex;
+  position: absolute;
+  top: -12vh;
+
+  &-text {
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    height: fit-content;
+    width: 71px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    visibility: hidden;
+    transform: rotate(90deg) translateX(29px) translateY(15px);
+    transition: transform 0.5s ease-out;
+  }
+}
+
+.blast {
+  @extend %blast;
+}
+
+@import "header";
+@import "mobile";
+@import "utilities";
+/* import fonts from fonts.scss file */
+// @import url(./fonts.min.css);

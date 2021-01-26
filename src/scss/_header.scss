@@ -1,0 +1,226 @@
+header {
+  height: 4rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  & > a {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-text {
+    font-family: $header-font;
+    font-size: 3.5rem;
+    color: transparent;
+    -webkit-text-stroke-color: $black-color;
+    -webkit-text-stroke-width: 2px;
+    line-height: 5.08333vw;
+    letter-spacing: -0.002em;
+    will-change: transform;
+    transform-origin: top;
+    transition: transform 0.5s ease-out;
+    animation: animate-logo-text 0.5s ease-out forwards;
+    margin-bottom: unset;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  & > div {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    will-change: transform, opacity;
+    transform-origin: top;
+    animation: animate-logo-text 1s ease-out forwards;
+    display: none;
+  }
+
+  @keyframes animate-logo-text {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+//vars
+$fg: $white-color;
+$pi: 3.14;
+
+//config
+$menu-items: 4;
+$open-distance: 105px;
+$opening-angle: $pi * 2;
+
+%ball {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  color: $black-color;
+  text-align: center;
+  line-height: 50px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+.menu-item {
+  @extend %ball;
+}
+.hamburger {
+  $width: 25px;
+  $height: 3px;
+  width: $width;
+  height: $height;
+  border-radius: 0.8rem;
+  display: block;
+  background-color: $black-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -$width/2;
+  margin-top: -$height/2;
+  transition: transform 200ms;
+}
+$hamburger-spacing: 8px;
+.hamburger-1 {
+  width: 50%;
+  transform: translate3d(0, -$hamburger-spacing, 0);
+}
+.hamburger-2 {
+  transform: translate3d(5px, 0, 0);
+}
+.hamburger-3 {
+  transform: translate3d(0, $hamburger-spacing, 0);
+}
+.menu-open:checked + .menu-open-button {
+  .hamburger-1 {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  .hamburger-2 {
+    transform: translate3d(0, 0, 0) scale(0.1, 1);
+  }
+  .hamburger-3 {
+    transform: translate3d(0, 0, 0) rotate(-45deg);
+  }
+}
+.menu {
+  $width: 50px;
+  $height: 50px;
+  position: absolute;
+  right: 0%;
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+
+  a {
+    &:hover svg {
+      transition: all 0.2s ease-out 0s;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      display: inline-block;
+    }
+
+    &::after {
+      content: "";
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      position: absolute;
+      text-align: center;
+      display: none;
+      transform: translateX(-30px);
+    }
+
+    &:first-of-type::after {
+      content: "CONTACT";
+      transform: translateX(-42px);
+    }
+    &:nth-of-type(2)::after {
+      content: "WORK";
+    }
+    &:nth-of-type(3)::after {
+      content: "SKILLS";
+    }
+    &:nth-of-type(4)::after {
+      content: "ABOUT";
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.menu-item {
+  &:hover {
+    color: $black-color;
+  }
+  @for $i from 1 through $menu-items {
+    &:nth-child(#{$i + 2}) {
+      transition-duration: 180ms;
+    }
+  }
+}
+
+.menu-open-button {
+  @extend %ball;
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: none;
+}
+.menu-open-button:hover {
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+.menu-open:checked + .menu-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+
+  &:hover {
+    transform: scale(1, 1) translate3d(0, 0, 0);
+  }
+}
+
+.menu-open:checked ~ .menu-item {
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  @for $i from 1 through $menu-items {
+    &:nth-child(#{$i + 2}) {
+      transition-duration: 90ms+ (100ms * $i);
+      transform: translate3d(-60px * $i, 0, 0);
+    }
+  }
+}
+
+.transparent-cover {
+  position: absolute;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  z-index: 1;
+  background-color: $primary-background-color;
+}

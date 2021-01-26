@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Dan Bamikiya --- Software Engineer`,
+    description: `Dan Bamikiya is a creative software engineer experienced in Frontend & Fullstack engineering`,
+    author: `@danBamikiya`,
+    // url: "https://www.dan-bamikiya.com",
+    image: "/images/front.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,17 +20,65 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `dan-bamikiya`,
+        short_name: `dan-bamikiya`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        lang: `en`,
+        background_color: `#f0f0f0`,
+        theme_color: `#f0f0f0`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
+        icon_options: {
+          purpose: `maskable`,
+        },
+        localize: [
+          {
+            name: `About Me`,
+            short_name: `About`,
+            description: `View a short description of Dan Bamikiya`,
+            start_url: `/about`,
+            lang: `en`,
+          },
+          {
+            name: `My Work`,
+            short_name: `Work`,
+            description: `View some of my recent work`,
+            start_url: `/portfolio`,
+            lang: `en`,
+          },
+          {
+            name: `Contact Me`,
+            short_name: `Contact`,
+            description: `Let's talk, I'm very social!`,
+            start_url: `/portfolio/#Contact`,
+            lang: `en`,
+          },
+        ],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svgs/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        once: false,
+        threshold: 0.3,
+      },
+    },
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        devMode: true,
+      },
+    },
   ],
 }
