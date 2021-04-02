@@ -3,7 +3,7 @@ import React, { useContext, useRef, useState } from "react"
 import CursorContext from "./cursorContext"
 
 const ContactForm = () => {
-  const getFormURL = "https://formspree.io/f/xdopbdqg"
+  const getFormURL = process.env.GATSBY_FORMSPREE_KEY
   const sendRef = useRef(null)
   const glassRefs = useRef([])
   const indices = [0, 1, 2]
