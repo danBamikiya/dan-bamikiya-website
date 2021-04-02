@@ -64,7 +64,7 @@ const ContactForm = () => {
 
     const form = e.target
     const data = new FormData(form)
-    fetch(form.action, {
+    fetch(getFormURL, {
       method: form.method,
       headers: {
         Accept: "application/json",
@@ -100,7 +100,6 @@ const ContactForm = () => {
         <h6>Let's talk I'm very social</h6>
         <form
           method="POST"
-          action={getFormURL}
           autoComplete="off"
           onSubmit={handleSubmit.bind(this)}
         >
