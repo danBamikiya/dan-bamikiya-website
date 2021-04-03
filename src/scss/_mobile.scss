@@ -105,6 +105,10 @@
 }
 
 @media (max-width: 769px) {
+  *, *::before, *::after {
+    cursor: initial;
+  }
+
   .cursor {
     display: none;
   }
