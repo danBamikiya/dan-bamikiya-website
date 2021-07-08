@@ -23,16 +23,13 @@ import Gatsby from "../../svgs/gatsby.svg"
 import Git from "../../svgs/git-icon.svg"
 import Gulp from "../../svgs/gulp.svg"
 import Heroku from "../../svgs/heroku.svg"
-import Jest from "../../svgs/jest-0.svg"
 import MongoDB from "../../svgs/mongodb-icon-1.svg"
-import PostgreSQL from "../../svgs/postgresql.svg"
 import TailwindCSS from "../../svgs/tailwindcss.svg"
 import Typescript from "../../svgs/typescript.svg"
 import Webpack from "../../svgs/webpack.svg"
 import Agile from "../../svgs/agile.svg"
 import Terraform from "../../svgs/terraformio-icon.svg"
 import HCL from "../../svgs/hashicorp-configuration-language.svg"
-import AWS from "../../svgs/AWS-S3-01.svg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInbox } from "@fortawesome/free-solid-svg-icons"
@@ -298,17 +295,6 @@ const AboutPage = () => {
                   <span>Babel</span>
                 </div>
                 <div
-                  data-sal="slide-right"
-                  data-sal-duration="500"
-                  data-sal-easing="ease-in-out"
-                  className="tool"
-                >
-                  <div>
-                    <PostgreSQL />
-                  </div>
-                  <span>PostgreSQL</span>
-                </div>
-                <div
                   data-sal="slide-left"
                   data-sal-duration="500"
                   data-sal-easing="ease-in-out"
@@ -331,17 +317,6 @@ const AboutPage = () => {
                   <span>Redis</span>
                 </div>
                 <div
-                  data-sal="slide-left"
-                  data-sal-duration="500"
-                  data-sal-easing="ease-in-out"
-                  className="tool"
-                >
-                  <div>
-                    <AWS />
-                  </div>
-                  <span>AWS S3</span>
-                </div>
-                <div
                   data-sal="slide-right"
                   data-sal-duration="500"
                   data-sal-easing="ease-in-out"
@@ -351,17 +326,6 @@ const AboutPage = () => {
                     <Heroku />
                   </div>
                   <span>Heroku</span>
-                </div>
-                <div
-                  data-sal="slide-left"
-                  data-sal-duration="500"
-                  data-sal-easing="ease-in-out"
-                  className="tool"
-                >
-                  <div>
-                    <Jest />
-                  </div>
-                  <span>Jest</span>
                 </div>
                 <div
                   data-sal="slide-right"
