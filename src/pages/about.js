@@ -32,6 +32,7 @@ import Typescript from "../../svgs/typescript.svg"
 import Webpack from "../../svgs/webpack.svg"
 import Agile from "../../svgs/agile.svg"
 import Terraform from "../../svgs/terraformio-icon.svg"
+import HCL from "../../svgs/hashicorp-configuration-language.svg"
 import AWS from "../../svgs/AWS-S3-01.svg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -210,17 +211,10 @@ const AboutPage = () => {
                   data-sal-easing="ease-in-out"
                   className="language"
                 >
-                  <div
-                    style={{
-                      fontSize: "2rem",
-                      fontWeight: "bolder",
-                      height: "71px",
-                      padding: "12px 0 10px 0",
-                    }}
-                  >
-                    SQL
+                  <div>
+                    <HCL />
                   </div>
-                  <span>SQL</span>
+                  <span>HCL</span>
                 </div>
               </div>
             </div>
