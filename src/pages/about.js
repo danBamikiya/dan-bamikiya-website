@@ -159,7 +159,7 @@ const AboutPage = () => {
                   <div>
                     <HTML5 />
                   </div>
-                  <span>HTML5</span>
+                  <span style={{ paddingRight: 10 }}>HTML5</span>
                 </div>
                 <div
                   data-sal="slide-left"
@@ -192,7 +192,7 @@ const AboutPage = () => {
                   <div>
                     <Javascript />
                   </div>
-                  <span>JS</span>
+                  <span>Javascript</span>
                 </div>
                 <div
                   data-sal="slide-right"
