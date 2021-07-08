@@ -24,7 +24,6 @@ import Git from "../../svgs/git-icon.svg"
 import Gulp from "../../svgs/gulp.svg"
 import Heroku from "../../svgs/heroku.svg"
 import Jest from "../../svgs/jest-0.svg"
-import Kubernetes from "../../svgs/kubernets.svg"
 import MongoDB from "../../svgs/mongodb-icon-1.svg"
 import PostgreSQL from "../../svgs/postgresql.svg"
 import TailwindCSS from "../../svgs/tailwindcss.svg"
@@ -264,17 +263,6 @@ const AboutPage = () => {
                     <Terraform />
                   </div>
                   <span>Terraform</span>
-                </div>
-                <div
-                  data-sal="slide-right"
-                  data-sal-duration="500"
-                  data-sal-easing="ease-in-out"
-                  className="tool"
-                >
-                  <div>
-                    <Kubernetes />
-                  </div>
-                  <span>Kubernetes</span>
                 </div>
                 <div
                   data-sal="slide-left"
