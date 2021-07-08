@@ -82,6 +82,7 @@ const AboutPage = () => {
               </Link>
               !
             </p>
+            <p>Also check out my open source contributions at my github page!</p>
             <div className="about-social-media">
               <ul className="nav-list">
                 <li>
