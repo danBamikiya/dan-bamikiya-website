@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 
 import CursorContext from "./cursorContext"
 
-import "./layout.css"
-import "../css/cursor.min.css"
-import "../css/circles.min.css"
+import "../scss/layout.scss"
+import "../scss/cursor.scss"
+import "../scss/circles.scss"
 
 const Layout = ({ children, mainStyle, mainClass, notFoundStyle }) => {
   const cursorRef = React.createRef()

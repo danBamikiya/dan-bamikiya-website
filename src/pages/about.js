@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 
-import "../css/about.min.css"
+import "../scss/about.scss"
 
 import HTML5 from "../../svgs/html-5.svg"
 import CSS3 from "../../svgs/css-5.svg"

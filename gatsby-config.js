@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Dan Bamikiya --- Software Engineer`,
+    title: `Dan Bamikiya - Software Engineer`,
     description: `Dan Bamikiya is a creative software engineer experienced in Frontend & Fullstack engineering`,
     author: `@danBamikiya`,
     // url: "https://www.dan-bamikiya.com",
@@ -80,5 +80,6 @@ module.exports = {
         devMode: true,
       },
     },
+    `gatsby-plugin-sass`
   ],
 }

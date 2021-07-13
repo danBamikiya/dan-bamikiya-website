@@ -5,7 +5,7 @@ import Header from "../components/header"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Icons from "../components/icons"
-import "../css/index.min.css"
+import "../scss/index.scss"
 
 const IndexPage = () => {
   const indexMainClass = "index-main"

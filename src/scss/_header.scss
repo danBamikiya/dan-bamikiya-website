@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 header {
   height: 4rem;
   position: relative;
@@ -93,8 +95,8 @@ $opening-angle: $pi * 2;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -$width/2;
-  margin-top: -$height/2;
+  margin-left: math.div(-$width, 2);
+  margin-top: math.div(-$height, 2);
   transition: transform 200ms;
 }
 $hamburger-spacing: 8px;

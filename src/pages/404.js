@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "../css/404.min.css"
+import "../scss/404.scss"
 
 const notFoundStyleHeight = {
   height: "100vh",
