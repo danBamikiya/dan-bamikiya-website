@@ -3,7 +3,7 @@ import React, { useRef } from "react"
 import ContactForm from "./contact"
 import PortfolioItems from "./portfolioItems"
 
-import useTimeout from "../hooks/useTimeout"
+import useTimeout from "../utils/hooks/useTimeout"
 
 const PortfolioMainSection = () => {
   const sectionRef = useRef(null)
