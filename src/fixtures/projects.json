@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Rekogniz AI",
+    "subtitle": "Built with: Typescript, Sass, HTML5, Webpack and some love.",
+    "descriptionStyle": {
+      "paddingBottom": "5.5vw",
+      "transform": "translate3d(-50%, -10%, 20px)"
+    },
+    "descriptionTheme": "inherit",
+    "image": "rekogniz-ai.jpg",
+    "alt": "Rekogniz AI",
+    "github": "https://github.com/danBamikiya/rekogniz-ai",
+    "demo": "https://danbamikiya.github.io/rekogniz-ai/"
+  },
+  {
+    "title": "StoryBooks",
+    "subtitle": "Built with: Javascript, ExpressJS, Handlebars, CSS3, MongoDB, Heroku, Docker, Terraform and some love.",
+    "subtitleStyle": {
+      "marginTop": "-0.5vw"
+    },
+    "descriptionStyle": {
+      "paddingBottom": "5.5vw",
+      "transform": "translate3d(-50%, -10%, 20px)"
+    },
+    "descriptionTheme": "inherit",
+    "image": "storybooks.png",
+    "alt": "StoryBooks",
+    "github": "https://github.com/danBamikiya/storybooks",
+    "demo": "https://storybooks-web-app.herokuapp.com"
+  },
+  {
+    "title": "My Portfolio",
+    "subtitle": "Built with: Javascript, Gatsby(React + GraphQL), SASS, Heroku and some love.",
+    "subtitleStyle": {
+      "marginTop": "-0.5vw"
+    },
+    "descriptionStyle": {
+      "paddingBottom": "5.5vw",
+      "transform": "translate3d(-50%, -10%, 20px)"
+    },
+    "descriptionTheme": "#888",
+    "image": "front.png",
+    "alt": "My Portfolio",
+    "github": "https://github.com/danBamikiya/dan-bamikiya-website",
+    "demo": "/"
+  },
+  {
+    "title": "URLy",
+    "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform and some love. (IN DEVELOPMENT)",
+    "subtitleStyle": {
+      "marginTop": "-0.5vw"
+    },
+    "descriptionStyle": {
+      "paddingBottom": "5.5vw",
+      "transform": "translate3d(-50%, -10%, 20px)"
+    },
+    "descriptionTheme": "#888",
+    "image": "urly.png",
+    "alt": "URLy",
+    "github": "https://github.com/danBamikiya/URLy",
+    "demo": "#"
+  },
+  {
+    "title": "Soundchat",
+    "subtitle": "Built with: Typescript, React, ExpressJS, TailwindCSS, Docker, Terraform and some love. (IN DEVELOPMENT)",
+    "subtitleStyle": {
+      "marginTop": "-0.5vw"
+    },
+    "descriptionStyle": {
+      "paddingBottom": "5.5vw",
+      "transform": "translate3d(-50%, -10%, 20px)"
+    },
+    "descriptionTheme": "inherit",
+    "image": "soundchat.png",
+    "alt": "Soundchat",
+    "github": "https://github.com/danBamikiya/soundchat",
+    "demo": "#"
+  }
+]

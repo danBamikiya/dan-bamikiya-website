@@ -112,7 +112,7 @@
               font-size: 1vw;
               font-family: "Signika", sans-serif;
               font-weight: 600;
-              color: #fca311;
+              color: $black-color;
               transition: 0.1s all;
             }
 
@@ -131,7 +131,7 @@
                 a {
                   padding: 0 0.3vw;
                   &:nth-child(1) {
-                    color: $dark-color;
+                    color: $darkest-color;
                     font-size: 1vw;
                   }
                   &:nth-child(2) {
