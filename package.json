@@ -1,9 +1,9 @@
 {
   "name": "dan-bamikiya",
   "private": false,
-  "description": "Dan Bamikiya is a creative software engineer experienced in Frontend & Fullstack engineering",
-  "version": "0.1.0",
-  "author": "Dan Bamikiya <danbamikiya@gmail.com>",
+  "description": "Dan Bamikiya is a Frontend focused software engineer",
+  "version": "1.1.0",
+  "author": "Dan Bamikiya",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
