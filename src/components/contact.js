@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from "react"
 
-import CursorContext from "./cursorContext"
+import CursorContext from "../contexts/cursorContext"
 
 const ContactForm = () => {
   const getFormURL = process.env.GATSBY_FORMSPREE_KEY

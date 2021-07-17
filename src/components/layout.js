@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 
-import CursorContext from "./cursorContext"
+import CursorContext from "../contexts/cursorContext"
 
 import "../scss/layout.scss"
 import "../scss/cursor.scss"
