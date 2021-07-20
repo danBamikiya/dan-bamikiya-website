@@ -1,6 +1,6 @@
 import React from "react"
 
-import Icons from "../components/icons"
+import HomeIcons from "../components/homeIcons"
 
 const HomeNav = () => (
   <div
@@ -8,7 +8,7 @@ const HomeNav = () => (
     style={{ fontSize: "0.4rem", willChange: "transform" }}
     role="navigation"
   >
-    <Icons />
+    <HomeIcons />
   </div>
 )
 
