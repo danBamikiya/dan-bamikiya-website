@@ -1,6 +1,6 @@
 import React from "react"
-import PortfolioItem from "../ui/PortfolioItem"
-import PortfolioItemContainer from "../ui/PortfolioItemContainer"
+import PortfolioItem from "./PortfolioItem"
+import PortfolioItemContainer from "./PortfolioItemContainer"
 
 import projects from "../fixtures/projects.json"
 
