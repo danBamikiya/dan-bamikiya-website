@@ -10,7 +10,12 @@
     "image": "rekogniz-ai.jpg",
     "alt": "Rekogniz AI",
     "github": "https://github.com/danBamikiya/rekogniz-ai",
-    "demo": "https://danbamikiya.github.io/rekogniz-ai/"
+    "demo": "https://danbamikiya.github.io/rekogniz-ai/",
+    "tags": {
+      "languages": ["Typescript", "Sass", "HTML5"],
+      "tools": ["Webpack", "Github Actions"],
+      "hosting": ["Github Pages"]
+    }
   },
   {
     "title": "StoryBooks",
@@ -26,11 +31,18 @@
     "image": "storybooks.png",
     "alt": "StoryBooks",
     "github": "https://github.com/danBamikiya/storybooks",
-    "demo": "https://storybooks-web-app.herokuapp.com"
+    "demo": "https://storybooks-web-app.herokuapp.com",
+    "tags": {
+      "languages": ["Javascript", "CSS3", "HCL"],
+      "frameworks": ["ExpressJS", "Materialize CSS"],
+      "tools": ["Docker", "Terraform", "Github Actions"],
+      "databases": ["MongoDB"],
+      "hosting": ["Heroku"]
+    }
   },
   {
     "title": "My Portfolio",
-    "subtitle": "Built with: Javascript, Gatsby(React + GraphQL), SASS, Heroku and some love.",
+    "subtitle": "Built with: Javascript, Gatsby(React + GraphQL), Sass, Heroku and some love.",
     "subtitleStyle": {
       "marginTop": "-0.5vw"
     },
@@ -42,7 +54,13 @@
     "image": "front.png",
     "alt": "My Portfolio",
     "github": "https://github.com/danBamikiya/dan-bamikiya-website",
-    "demo": "/"
+    "demo": "/",
+    "tags": {
+      "languages": ["Javascript", "Sass", "GraphQL"],
+      "frameworks": ["React", "Gatsby"],
+      "tools": ["Circle CI"],
+      "hosting": ["Heroku"]
+    }
   },
   {
     "title": "URLy",
@@ -58,7 +76,13 @@
     "image": "urly.png",
     "alt": "URLy",
     "github": "https://github.com/danBamikiya/URLy",
-    "demo": "#"
+    "demo": "#",
+    "tags": {
+      "languages": ["Typescript", "CSS3", "HCL"],
+      "frameworks": ["ExpressJS", "AngularJS"],
+      "tools": ["Docker", "Terraform", "Github Actions"],
+      "databases": ["Redis"]
+    }
   },
   {
     "title": "Soundchat",
@@ -74,6 +98,11 @@
     "image": "soundchat.png",
     "alt": "Soundchat",
     "github": "https://github.com/danBamikiya/soundchat",
-    "demo": "#"
+    "demo": "#",
+    "tags": {
+      "languages": ["Typescript", "CSS3", "HCL"],
+      "frameworks": ["ExpressJS", "TailwindCSS", "React"],
+      "tools": ["Docker", "Terraform"]
+    }
   }
 ]
