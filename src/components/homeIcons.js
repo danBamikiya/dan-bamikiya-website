@@ -9,19 +9,21 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 
-const Icons = () => {
+import LINKS from "../utils/constants/links"
+
+const HomeIcons = () => {
   return (
     <>
-      <Link to="/about" className="nav icons" aria-label="About">
+      <Link to={LINKS.ABOUT} className="nav icons" aria-label="About">
         <FontAwesomeIcon icon={faUser} size="3x" />
       </Link>
-      <Link to="/about" className="nav icons" aria-label="Skills">
+      <Link to={LINKS.ABOUT} className="nav icons" aria-label="Skills">
         <FontAwesomeIcon icon={faCog} size="3x" />
       </Link>
-      <Link to="/portfolio" className="nav icons" aria-label="Portfolio">
+      <Link to={LINKS.WORKS} className="nav icons" aria-label="Portfolio">
         <FontAwesomeIcon icon={faEye} size="3x" />
       </Link>
-      <Link to="/portfolio/#Contact" className="nav icons" aria-label="Contact">
+      <Link to={LINKS.CONTACT} className="nav icons" aria-label="Contact">
         <FontAwesomeIcon icon={faInbox} size="3x" />
       </Link>
 
@@ -36,7 +38,7 @@ const Icons = () => {
         }}
       >
         <a
-          href="https://github.com/danBamikiya"
+          href={LINKS.GITHUB}
           target="_blank"
           className="social icons"
           rel="noopener noreferrer"
@@ -45,7 +47,7 @@ const Icons = () => {
           <FontAwesomeIcon icon={faGithubAlt} size="3x" />
         </a>
         <a
-          href="https://linkedin.com/in/dan-bamikiya"
+          href={LINKS.LINKEDIN}
           target="_blank"
           className="social icons"
           rel="noopener noreferrer"
@@ -54,7 +56,7 @@ const Icons = () => {
           <FontAwesomeIcon icon={faLinkedinIn} size="3x" />
         </a>
         <a
-          href="https://twitter.com/danbamikiya"
+          href={LINKS.TWITTER}
           target="_blank"
           className="social icons"
           rel="noopener noreferrer"
@@ -72,4 +74,4 @@ const Icons = () => {
   )
 }
 
-export default Icons
+export default HomeIcons

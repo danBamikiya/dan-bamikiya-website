@@ -5,9 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCog, faInbox } from "@fortawesome/free-solid-svg-icons"
 import { faUser, faEye } from "@fortawesome/free-regular-svg-icons"
 
+import LINKS from "../utils/constants/links"
+
 const Header = ({ headerStyle }) => (
   <header>
-    <Link to="/" title="Home" aria-label="Home">
+    <Link to={LINKS.HOME} title="Home" aria-label="Home">
       {" "}
       <p className="logo-text">D</p>
     </Link>
@@ -27,24 +29,20 @@ const Header = ({ headerStyle }) => (
           <span className="hamburger hamburger-3"></span>
         </label>
 
-        <Link
-          to="/portfolio/#Contact"
-          className="menu-item"
-          aria-label="Contact"
-        >
+        <Link to={LINKS.CONTACT} className="menu-item" aria-label="Contact">
           <FontAwesomeIcon icon={faInbox} />
           <span>Contact</span>
         </Link>
-        <Link to="/portfolio" className="menu-item" aria-label="Portfolio">
+        <Link to={LINKS.WORKS} className="menu-item" aria-label="Portfolio">
           <FontAwesomeIcon icon={faEye} />
           <span>Work</span>
         </Link>
-        <Link to="/about/#Skills" className="menu-item" aria-label="Skills">
+        <Link to={LINKS.SKILLS} className="menu-item" aria-label="Skills">
           <FontAwesomeIcon icon={faCog} />
 
           <span>Skills</span>
         </Link>
-        <Link to="/about" className="menu-item" aria-label="About">
+        <Link to={LINKS.ABOUT} className="menu-item" aria-label="About">
           <FontAwesomeIcon icon={faUser} />
           <span>About</span>
         </Link>
