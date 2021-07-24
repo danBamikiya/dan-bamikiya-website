@@ -2,10 +2,6 @@
 $cursor-primary-scale: scale(1);
 $cursor-rotate: rotate(45deg);
 
-.border-color {
-  border-color: white !important;
-}
-
 %cursor {
   width: 30px;
   height: 30px;
@@ -68,5 +64,20 @@ $cursor-rotate: rotate(45deg);
   }
   100% {
     transform: $cursor-rotate $cursor-primary-scale;
+  }
+}
+
+.cursor-white {
+  border-color: white !important;
+}
+
+.remove-cursor {
+  visibility: hidden;
+}
+
+.default-cursor {
+  cursor: default;
+  * {
+    cursor: default !important;
   }
 }
