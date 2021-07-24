@@ -1,0 +1,12 @@
+const THEMES = Object.freeze({
+  WHITE_SMOKE: "#F0F0F0",
+  CHABLIS: "#FFE5D9",
+  FELDSPAR: "#CB997E",
+  CATALINA_BLUE: "#1D3557",
+  CHARLOTTE: "#A8DADC",
+  DARK_TANGERINE: "#FCA311",
+  SUNDOWN: "#FFADAD",
+  BLACK: "#000000",
+})
+
+export default THEMES
