@@ -150,3 +150,31 @@
     opacity: 0.2;
   }
 }
+
+%glass-success {
+  color: $success-color;
+
+  &::after {
+    background: $success-bg-gradient;
+  }
+}
+
+%glass-failure {
+  color: $failure-color;
+
+  span {
+    width: 100px;
+
+    p {
+      &:first-child {
+        color: $danger-color;
+      }
+
+      margin-bottom: 0.1rem;
+    }
+  }
+
+  &::after {
+    background: $failure-bg-gradient;
+  }
+}

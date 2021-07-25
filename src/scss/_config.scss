@@ -5,6 +5,9 @@ $white-color: white;
 $purple-color: #5c63ab;
 $twitter-color: #38a1f3;
 $linkedin-color: #2867b2;
+$success-color: #3cb371;
+$failure-color: #0000ff;
+$danger-color: #b22222;
 $dark-color: #333;
 $darker-color: #1e1e24;
 $darkest-color: #111;
@@ -15,6 +18,8 @@ $primary-background-gradient: linear-gradient(
   #33ccff 0%,
   #ff99cc 100%
 );
+$success-bg-gradient: linear-gradient(to top, #6ef3a9 0%, #09f572 100%);
+$failure-bg-gradient: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
 $primary-border-radius: 50%;
 
 // Set text color based on bg

@@ -292,6 +292,14 @@
     @each $glass in $glass-effects {
       #{$glass} {
         @extend %glass;
+
+        &.success-msg {
+          @extend %glass-success;
+        }
+
+        &.failure-msg {
+          @extend %glass-failure;
+        }
       }
     }
 
@@ -301,10 +309,6 @@
       top: -42px;
       width: 150px;
       height: 150px;
-
-      &::after {
-        background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
-      }
     }
 
     .glass-square-1 {
@@ -313,10 +317,6 @@
       border-radius: 20px;
       width: 125px;
       height: 122px;
-
-      &::after {
-        background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
-      }
     }
 
     .glass-square-2 {
@@ -325,10 +325,6 @@
       border-radius: 10px;
       width: 200px;
       height: 163px;
-
-      &::after {
-        background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
-      }
     }
   }
 }
