@@ -60,8 +60,5 @@
   },
   "bugs": {
     "url": "https://github.com/danBamikiya/dan-bamikiya-website/issues"
-  },
-  "engines": {
-    "node": "14.x"
   }
 }
