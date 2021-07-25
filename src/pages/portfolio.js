@@ -9,20 +9,20 @@ import "../scss/portfolio.scss"
 
 const PortfolioPage = () => {
   const styles = {
-    mainStyle: {
+    main: {
       height: "100%",
       overflow: "hidden",
       width: "93%",
     },
-    navStyle: {
+    nav: {
       display: "flex",
     },
   }
 
   return (
-    <Layout mainStyle={styles.mainStyle}>
+    <Layout mainStyle={styles.main}>
       <SEO title="Portfolio" />
-      <Header headerStyle={styles.navStyle} />
+      <Header headerStyle={styles.nav} />
       <PortfolioMainSection />
     </Layout>
   )
