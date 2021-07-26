@@ -21,6 +21,8 @@ $primary-background-gradient: linear-gradient(
 $success-bg-gradient: linear-gradient(to top, #6ef3a9 0%, #09f572 100%);
 $failure-bg-gradient: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
 $primary-border-radius: 50%;
+$scrollbar-thumb-color: #1e1e24;
+$scrollbar-track-color: #0000004d;
 
 // Set text color based on bg
 @function set-text-color($color) {
