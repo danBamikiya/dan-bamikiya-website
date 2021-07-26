@@ -37,7 +37,7 @@ const SkillSection = () => (
   >
     <div className="skills-heading">
       <h1>Skills</h1>
-      <h6>What I'm good at</h6>
+      <h6>What I use</h6>
     </div>
     <div className="skills-details">
       <div className="skills-details-languages">
