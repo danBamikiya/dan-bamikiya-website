@@ -1,16 +1,16 @@
 [
   {
-    "title": "Rekogniz AI",
+    "title": "Movie Finder",
     "subtitle": "Built with: Typescript, Sass, HTML5, Webpack and some love.",
     "descriptionStyle": {
       "paddingBottom": "5.5vw",
       "transform": "translate3d(-50%, -10%, 20px)"
     },
     "descriptionTheme": "inherit",
-    "image": "rekogniz-ai.jpg",
-    "alt": "Rekogniz AI",
-    "github": "https://github.com/danBamikiya/rekogniz-ai",
-    "demo": "https://danbamikiya.github.io/rekogniz-ai/",
+    "image": "movie-finder.png",
+    "alt": "Movie Finder",
+    "github": "https://github.com/danBamikiya/movie-finder",
+    "demo": "https://danbamikiya.github.io/movie-finder/",
     "tags": {
       "languages": ["Typescript", "Sass", "HTML5"],
       "tools": ["Webpack", "Github Actions"],
