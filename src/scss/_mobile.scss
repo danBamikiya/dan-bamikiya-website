@@ -105,7 +105,9 @@
 }
 
 @media (max-width: 769px) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     cursor: initial;
   }
 
@@ -385,6 +387,12 @@
 }
 @media (max-width: 375px) {
   main {
+    .home-wrapper {
+      .hero-text {
+        right: 5%;
+      }
+    }
+
     section.portfolio-page-main .portfolio {
       .portfolio-heading {
         h1 {
@@ -425,6 +433,8 @@
   main {
     .home-wrapper {
       .hero-text {
+        right: 10%;
+
         h1 {
           font-size: 3.7rem;
 
