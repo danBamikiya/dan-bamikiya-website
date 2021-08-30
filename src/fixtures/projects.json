@@ -63,8 +63,8 @@
     }
   },
   {
-    "title": "URLy",
-    "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform and some love. (IN DEVELOPMENT)",
+    "title": "Cuttlink",
+    "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform, PostgreSQL, NGINX and some love. (IN DEVELOPMENT)",
     "subtitleStyle": {
       "marginTop": "-0.5vw"
     },
@@ -73,15 +73,15 @@
       "transform": "translate3d(-50%, -10%, 20px)"
     },
     "descriptionTheme": "#888",
-    "image": "urly.png",
-    "alt": "URLy",
-    "github": "https://github.com/danBamikiya/URLy",
+    "image": "cuttlink.png",
+    "alt": "Cuttlink",
+    "github": "https://github.com/danBamikiya/cuttlink",
     "demo": "#",
     "tags": {
       "languages": ["Typescript", "CSS3", "HCL"],
       "frameworks": ["ExpressJS", "AngularJS"],
-      "tools": ["Docker", "Terraform", "Github Actions"],
-      "databases": ["Redis"]
+      "tools": ["Docker", "Terraform", "NGINX", "Github Actions"],
+      "databases": ["Redis", "PostgresSQL"]
     }
   },
   {
