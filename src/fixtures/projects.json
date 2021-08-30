@@ -64,7 +64,7 @@
   },
   {
     "title": "Cuttlink",
-    "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform, PostgreSQL, NGINX and some love. (IN DEVELOPMENT)",
+    "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform, NGINX and some love. (IN DEVELOPMENT)",
     "subtitleStyle": {
       "marginTop": "-0.5vw"
     },
