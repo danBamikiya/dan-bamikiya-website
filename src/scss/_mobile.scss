@@ -13,6 +13,11 @@
 
       .image-wrapper {
         width: 24rem;
+        transform: translate(10px, 48px);
+
+        .chat-bubble {
+          right: 0rem !important;
+        }
       }
     }
 
@@ -45,6 +50,14 @@
 
 @media (min-width: 1440px) {
   main {
+    .home-wrapper {
+      .image-wrapper {
+        .chat-bubble {
+          right: -2rem;
+        }
+      }
+    }
+
     .home-nav {
       top: 0;
       bottom: 19rem;
