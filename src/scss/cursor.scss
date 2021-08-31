@@ -17,6 +17,7 @@ $cursor-rotate: rotate(45deg);
   animation: cursorAnim 0.5s infinite alternate;
   z-index: 1000;
   transform: $cursor-rotate $cursor-primary-scale;
+  will-change: transform;
 }
 
 .cursor::after {
@@ -29,11 +30,13 @@ $cursor-rotate: rotate(45deg);
   top: -1px;
   left: -1px;
   animation: cursorAnim2 0.5s infinite alternate;
+  will-change: transform;
 }
 
 .expand {
-  animation: cursorAnim3 0.5s forwards;
+  animation: cursorAnim3 0.5s normal;
   border: 1px solid $white-color;
+  will-change: transform;
 }
 
 @keyframes cursorAnim {
