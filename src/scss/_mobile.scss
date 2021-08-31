@@ -18,7 +18,7 @@
 
     .home-nav {
       top: 0;
-      bottom: 26rem;
+      bottom: 26rem !important;
     }
 
     section.portfolio-page-main .portfolio .portfolio-details {
@@ -39,6 +39,15 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    .home-nav {
+      top: 0;
+      bottom: 19rem;
     }
   }
 }
