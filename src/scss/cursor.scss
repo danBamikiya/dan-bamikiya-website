@@ -37,6 +37,10 @@ $cursor-rotate: rotate(45deg);
   animation: cursorAnim3 0.5s normal;
   border: 1px solid $white-color;
   will-change: transform;
+
+  &::after {
+    animation: cursorAnim4 0.5s normal;
+  }
 }
 
 @keyframes cursorAnim {
@@ -50,7 +54,7 @@ $cursor-rotate: rotate(45deg);
 
 @keyframes cursorAnim2 {
   from {
-    transform: $cursor-primary-scale;
+    transform: scale(0.9);
   }
   to {
     transform: scale(0.5);
@@ -67,6 +71,15 @@ $cursor-rotate: rotate(45deg);
   }
   100% {
     transform: $cursor-rotate $cursor-primary-scale;
+  }
+}
+
+@keyframes cursorAnim4 {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(0.9);
   }
 }
 
