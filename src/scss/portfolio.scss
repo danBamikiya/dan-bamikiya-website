@@ -71,12 +71,14 @@
       .portfolio-item-container {
         margin: 2.5vw 1.5vw;
         width: 41vw;
+        will-change: transform;
 
         .portfolio-item {
           position: relative;
           width: 41vw;
           height: 22vw;
           border: 1px solid lighten($black-color, 13.5%);
+          will-change: transform;
 
           .portfolio-img {
             height: 100%;
@@ -167,6 +169,7 @@
     margin-top: 2rem;
     padding-bottom: 6rem;
     margin-right: 1px;
+    will-change: transform;
     &::after {
       content: "";
       top: 0;
