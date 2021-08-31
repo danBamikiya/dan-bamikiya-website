@@ -25,20 +25,30 @@
       top: 0;
       bottom: 26rem !important;
     }
+  }
+}
 
+@media (min-width: 1476px) {
+  main {
     section.portfolio-page-main .portfolio .portfolio-details {
       grid-template-columns: 1fr !important;
+      justify-items: center;
 
-      .portfolio-item-container .portfolio-description {
-        padding-bottom: 5vw;
+      .portfolio-item-container {
+        width: 47rem;
+        height: 25rem;
 
-        .title {
-          margin-top: 1vw;
+        .portfolio-description {
+          padding-bottom: 5vw;
 
-          .portfolio-description-title-links {
-            a {
-              &:nth-child(1) {
-                font-size: 0.8vw !important;
+          .title {
+            margin-top: 1vw;
+
+            .portfolio-description-title-links {
+              a {
+                &:nth-child(1) {
+                  font-size: 0.8vw !important;
+                }
               }
             }
           }
