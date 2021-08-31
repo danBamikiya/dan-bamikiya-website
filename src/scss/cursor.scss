@@ -54,7 +54,7 @@ $cursor-rotate: rotate(45deg);
 
 @keyframes cursorAnim2 {
   from {
-    transform: scale(0.9);
+    transform: $cursor-primary-scale;
   }
   to {
     transform: scale(0.5);
@@ -67,7 +67,7 @@ $cursor-rotate: rotate(45deg);
     opacity: 0;
   }
   50% {
-    transform: $cursor-rotate scale(2);
+    transform: $cursor-rotate scale(2.2);
   }
   100% {
     transform: $cursor-rotate $cursor-primary-scale;
@@ -76,10 +76,10 @@ $cursor-rotate: rotate(45deg);
 
 @keyframes cursorAnim4 {
   from {
-    transform: scale(0.9);
+    transform: $cursor-primary-scale;
   }
   to {
-    transform: scale(0.9);
+    transform: $cursor-primary-scale;
   }
 }
 
