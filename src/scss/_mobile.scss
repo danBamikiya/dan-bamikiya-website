@@ -297,6 +297,9 @@
     }
 
     section.portfolio-page-main .contact {
+      & .glass-square-1 {
+        left: 12px;
+      }
       & .glass-square-2 {
         left: 160px;
       }
