@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import PortfolioIcons from "../components/portfolioIcons"
 
 const PortfolioItemDescription = ({
-  subtitleStyle,
   descriptionTheme,
   subtitle,
   title,
@@ -14,13 +13,10 @@ const PortfolioItemDescription = ({
   <div
     className="portfolio-description"
     style={{
-      paddingBottom: "5.5vw",
       transform: "translate3d(-50%, -10%, 20px)",
     }}
   >
-    <div className="subtitle" style={subtitleStyle}>
-      {subtitle}
-    </div>
+    <div className="subtitle">{subtitle}</div>
     <div className="title" style={{ color: descriptionTheme }}>
       {title}
       <PortfolioIcons

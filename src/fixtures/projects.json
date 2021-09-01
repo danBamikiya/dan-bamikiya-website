@@ -2,10 +2,6 @@
   {
     "title": "Movie Finder",
     "subtitle": "Built with: Typescript, Sass, HTML5, Webpack and some love.",
-    "descriptionStyle": {
-      "paddingBottom": "5.5vw",
-      "transform": "translate3d(-50%, -10%, 20px)"
-    },
     "descriptionTheme": "inherit",
     "image": "movie-finder.png",
     "alt": "Movie Finder",
@@ -20,13 +16,6 @@
   {
     "title": "StoryBooks",
     "subtitle": "Built with: Javascript, ExpressJS, Handlebars, CSS3, MongoDB, Heroku, Docker, Terraform and some love.",
-    "subtitleStyle": {
-      "marginTop": "-0.5vw"
-    },
-    "descriptionStyle": {
-      "paddingBottom": "5.5vw",
-      "transform": "translate3d(-50%, -10%, 20px)"
-    },
     "descriptionTheme": "inherit",
     "image": "storybooks.png",
     "alt": "StoryBooks",
@@ -43,13 +32,6 @@
   {
     "title": "My Portfolio",
     "subtitle": "Built with: Javascript, Gatsby(React + GraphQL), Sass, Heroku and some love.",
-    "subtitleStyle": {
-      "marginTop": "-0.5vw"
-    },
-    "descriptionStyle": {
-      "paddingBottom": "5.5vw",
-      "transform": "translate3d(-50%, -10%, 20px)"
-    },
     "descriptionTheme": "#888",
     "image": "front.png",
     "alt": "My Portfolio",
@@ -65,13 +47,6 @@
   {
     "title": "Cuttlink",
     "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform, NGINX and some love. (IN DEVELOPMENT)",
-    "subtitleStyle": {
-      "marginTop": "-0.5vw"
-    },
-    "descriptionStyle": {
-      "paddingBottom": "5.5vw",
-      "transform": "translate3d(-50%, -10%, 20px)"
-    },
     "descriptionTheme": "#888",
     "image": "cuttlink.png",
     "alt": "Cuttlink",
@@ -87,13 +62,6 @@
   {
     "title": "Soundchat",
     "subtitle": "Built with: Typescript, React, ExpressJS, TailwindCSS, Docker, Terraform and some love. (IN DEVELOPMENT)",
-    "subtitleStyle": {
-      "marginTop": "-0.5vw"
-    },
-    "descriptionStyle": {
-      "paddingBottom": "5.5vw",
-      "transform": "translate3d(-50%, -10%, 20px)"
-    },
     "descriptionTheme": "inherit",
     "image": "soundchat.png",
     "alt": "Soundchat",
