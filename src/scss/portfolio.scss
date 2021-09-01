@@ -90,21 +90,15 @@
             }
           }
 
-          &:hover {
-            .portfolio-description {
-              opacity: 1;
-            }
-          }
-
           .portfolio-description {
             position: absolute;
-            opacity: 0;
             width: 93%;
             left: 50%;
             top: 70%;
-            height: 3vw;
-            padding: 5vw;
-            padding-top: 1vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.2rem 2.5rem 0.5rem;
             background-color: rgba(255, 255, 255, 0.15);
             color: $white-color;
             bottom: 0px;
@@ -124,14 +118,19 @@
               transition: 0.1s all;
               font-size: 1.4vw;
               font-family: "Montserrat", sans-serif;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
 
               .portfolio-description-title-links {
                 display: inline-flex;
                 margin: 0 1vw;
-                float: right;
 
                 a {
-                  padding: 0 0.3vw;
+                  margin: 0 0.3vw;
+                  display: flex;
+                  align-items: center;
+
                   &:nth-child(1) {
                     color: $darkest-color;
                     font-size: 1vw;
