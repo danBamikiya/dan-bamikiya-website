@@ -60,17 +60,33 @@
     }
   },
   {
-    "title": "Soundchat",
-    "subtitle": "Built with: Typescript, React, ExpressJS, TailwindCSS, Docker, Terraform and some love. (IN DEVELOPMENT)",
+    "title": "Ankara Store Dashboard",
+    "subtitle": "Built with: Typescript, React, Chart.js, Sass, Docker, Heroku and some love.",
     "descriptionTheme": "inherit",
-    "image": "soundchat.png",
-    "alt": "Soundchat",
-    "github": "https://github.com/danBamikiya/soundchat",
-    "demo": "#",
+    "image": "ankara-store.png",
+    "alt": "Ankara Store",
+    "github": "https://github.com/danBamikiya/ankara-store",
+    "demo": "http://ankara-store.herokuapp.com/",
     "tags": {
-      "languages": ["Typescript", "CSS3", "HCL"],
-      "frameworks": ["ExpressJS", "TailwindCSS", "React"],
-      "tools": ["Docker", "Terraform"]
+      "languages": ["Typescript", "Sass"],
+      "frameworks": ["React"],
+      "tools": ["Docker"],
+      "hosting": ["Heroku"]
+    }
+  },
+  {
+    "title": "Confrencity",
+    "subtitle": "Built with: Typescript, React, Agora BuildKit, Netlify and some love.",
+    "descriptionTheme": "#888",
+    "image": "confrencity.png",
+    "alt": "Confrencity",
+    "github": "https://github.com/danBamikiya/confrencity/",
+    "demo": "https://confrencity.netlify.app/",
+    "tags": {
+      "languages": ["Typescript"],
+      "frameworks": ["React"],
+      "tools": ["Agora BuildKit"],
+      "hosting": ["Netlify"]
     }
   }
 ]
