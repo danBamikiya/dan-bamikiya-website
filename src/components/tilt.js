@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import useTilt from "../utils/hooks/useTilt"
 
 const defaultTiltOptions = {
-  maxTilt: 20,
+  max: 5,
   perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
   easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   scale: 1, // 2 = 200%, 1.5 = 150%, etc..
