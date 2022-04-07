@@ -9,6 +9,7 @@ import {
   faGithubSquare,
   faLinkedin,
   faTwitterSquare,
+  faDev,
 } from "@fortawesome/free-brands-svg-icons"
 
 const AboutSection = () => (
@@ -25,20 +26,26 @@ const AboutSection = () => (
         <h6>Myself</h6>
       </div>
       <p>
-        Hello visitor, thanks for dropping by! My name is Dan, and I'm a
-        software engineer with a passion for sleek user-friendly design and I
-        love writing nicely architectured, clean and maintainable code that
-        delivers, working with other people on solving tough problems, and
-        learning new things along the way!
+        Hello visitor, My name is Dan, I deliver beautiful Web, Mobile & Desktop
+        experiences as a Frontend Engineer. I also{" "}
+        <a
+          href={LINKS.SPEAKING}
+          className="about-portfolio-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          speak
+        </a>{" "}
+        and I'm an open source sustainer and an incoming Web3 engineer.
       </p>
       <p>
         Feel free to explore this website and check out my{" "}
         <Link to={LINKS.WORKS} className="about-portfolio-link">
           work
         </Link>
-        !
+        .
       </p>
-      <p>Also check out my open source contributions at my github page!</p>
+      <p>You can view my open source work at my github page.</p>
       <div className="about-social-media">
         <ul className="nav-list">
           <li>
@@ -77,6 +84,17 @@ const AboutSection = () => (
               title="Twitter"
             >
               <FontAwesomeIcon icon={faTwitterSquare} size="1x" />
+            </a>
+          </li>
+          <li>
+            <a
+              href={LINKS.DEV}
+              target="_blank"
+              className="icons-link"
+              rel="noopener noreferrer"
+              title="Dev.to"
+            >
+              <FontAwesomeIcon icon={faDev} size="1x" />
             </a>
           </li>
         </ul>
