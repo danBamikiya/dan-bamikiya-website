@@ -1,16 +1,33 @@
 [
   {
-    "title": "Movie Finder",
-    "subtitle": "Built with: Typescript, Sass, HTML5, Webpack and some love.",
+    "title": "Urban Stores",
+    "subtitle": "Built with: Typescript, React, Redux, Sass, Firebase and some love.",
     "descriptionTheme": "inherit",
-    "image": "movie-finder.png",
-    "alt": "Movie Finder",
-    "github": "https://github.com/danBamikiya/movie-finder",
-    "demo": "https://danbamikiya.github.io/movie-finder/",
+    "image": "urban-stores.png",
+    "alt": "Urban Stores",
+    "github": "https://github.com/danBamikiya/urban-store",
+    "demo": "https://urban-stores.web.app/",
     "tags": {
-      "languages": ["Typescript", "Sass", "HTML5"],
-      "tools": ["Webpack", "Github Actions"],
-      "hosting": ["Github Pages"]
+      "languages": ["Typescript", "Sass"],
+      "frameworks": ["React", "ExpressJS"],
+      "tools": ["Firebase CLI", "Docker"],
+      "databases": ["Firebase"],
+      "hosting": ["Firebase"]
+    }
+  },
+  {
+    "title": "Ankara Store Dashboard",
+    "subtitle": "Built with: Typescript, React, Chart.js, Sass, Docker, Heroku and some love.",
+    "descriptionTheme": "inherit",
+    "image": "ankara-store.png",
+    "alt": "Ankara Store",
+    "github": "https://github.com/danBamikiya/ankara-store",
+    "demo": "http://ankara-store.herokuapp.com/",
+    "tags": {
+      "languages": ["Typescript", "Sass"],
+      "frameworks": ["React"],
+      "tools": ["Docker"],
+      "hosting": ["Heroku"]
     }
   },
   {
@@ -30,6 +47,21 @@
     }
   },
   {
+    "title": "Confrencity",
+    "subtitle": "Built with: Typescript, React, Agora BuildKit, Netlify and some love.",
+    "descriptionTheme": "#888",
+    "image": "confrencity.png",
+    "alt": "Confrencity",
+    "github": "https://github.com/danBamikiya/confrencity/",
+    "demo": "https://confrencity.netlify.app/",
+    "tags": {
+      "languages": ["Typescript"],
+      "frameworks": ["React"],
+      "tools": ["Agora BuildKit"],
+      "hosting": ["Netlify"]
+    }
+  },
+  {
     "title": "My Portfolio",
     "subtitle": "Built with: Javascript, Gatsby(React + GraphQL), Sass, Heroku and some love.",
     "descriptionTheme": "#888",
@@ -45,6 +77,20 @@
     }
   },
   {
+    "title": "Movie Finder",
+    "subtitle": "Built with: Typescript, Sass, HTML5, Webpack and some love.",
+    "descriptionTheme": "inherit",
+    "image": "movie-finder.png",
+    "alt": "Movie Finder",
+    "github": "https://github.com/danBamikiya/movie-finder",
+    "demo": "https://danbamikiya.github.io/movie-finder/",
+    "tags": {
+      "languages": ["Typescript", "Sass", "HTML5"],
+      "tools": ["Webpack", "Github Actions"],
+      "hosting": ["Github Pages"]
+    }
+  },
+  {
     "title": "Cuttlink",
     "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform, NGINX and some love. (IN DEVELOPMENT)",
     "descriptionTheme": "#888",
@@ -57,36 +103,6 @@
       "frameworks": ["ExpressJS", "AngularJS"],
       "tools": ["Docker", "Terraform", "NGINX", "Github Actions"],
       "databases": ["Redis", "PostgresSQL"]
-    }
-  },
-  {
-    "title": "Ankara Store Dashboard",
-    "subtitle": "Built with: Typescript, React, Chart.js, Sass, Docker, Heroku and some love.",
-    "descriptionTheme": "inherit",
-    "image": "ankara-store.png",
-    "alt": "Ankara Store",
-    "github": "https://github.com/danBamikiya/ankara-store",
-    "demo": "http://ankara-store.herokuapp.com/",
-    "tags": {
-      "languages": ["Typescript", "Sass"],
-      "frameworks": ["React"],
-      "tools": ["Docker"],
-      "hosting": ["Heroku"]
-    }
-  },
-  {
-    "title": "Confrencity",
-    "subtitle": "Built with: Typescript, React, Agora BuildKit, Netlify and some love.",
-    "descriptionTheme": "#888",
-    "image": "confrencity.png",
-    "alt": "Confrencity",
-    "github": "https://github.com/danBamikiya/confrencity/",
-    "demo": "https://confrencity.netlify.app/",
-    "tags": {
-      "languages": ["Typescript"],
-      "frameworks": ["React"],
-      "tools": ["Agora BuildKit"],
-      "hosting": ["Netlify"]
     }
   }
 ]
