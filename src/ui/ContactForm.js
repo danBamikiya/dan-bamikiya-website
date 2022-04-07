@@ -86,7 +86,7 @@ const ContactForm = ({ setStatus, glassRefs }) => {
   return (
     <div className="contact-background">
       <h1>Contact Me</h1>
-      <h6>Let's talk I'm very social</h6>
+      <h6>Let's talk!</h6>
       <form method="POST" autoComplete="off" onSubmit={handleSubmit.bind(this)}>
         <ul>
           <li className="half">
