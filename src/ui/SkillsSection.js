@@ -8,22 +8,17 @@ import {
   Nodejs,
   Redis,
   Sass,
-  Angular,
   Babel,
   Bootstrap,
   Docker,
   Express,
   Gatsby,
   Git,
-  Gulp,
-  Heroku,
   MongoDB,
   TailwindCSS,
   Typescript,
   Webpack,
-  Agile,
   Terraform,
-  HCL,
 } from "../utils/constants/svg-paths"
 
 const SkillSection = () => (
@@ -98,17 +93,6 @@ const SkillSection = () => (
             </div>
             <span>Typescript</span>
           </div>
-          <div
-            data-sal="slide-left"
-            data-sal-duration="500"
-            data-sal-easing="ease-in-out"
-            className="language"
-          >
-            <div>
-              <HCL />
-            </div>
-            <span>HCL</span>
-          </div>
         </div>
       </div>
       <div className="skills-details-tools">
@@ -170,17 +154,6 @@ const SkillSection = () => (
             <span>Webpack</span>
           </div>
           <div
-            data-sal="slide-left"
-            data-sal-duration="500"
-            data-sal-easing="ease-in-out"
-            className="tool"
-          >
-            <div style={{ paddingLeft: "30px" }}>
-              <Gulp />
-            </div>
-            <span>Gulp</span>
-          </div>
-          <div
             data-sal="slide-right"
             data-sal-duration="500"
             data-sal-easing="ease-in-out"
@@ -213,28 +186,6 @@ const SkillSection = () => (
             </div>
             <span>Redis</span>
           </div>
-          <div
-            data-sal="slide-left"
-            data-sal-duration="500"
-            data-sal-easing="ease-in-out"
-            className="tool"
-          >
-            <div>
-              <Heroku />
-            </div>
-            <span>Heroku</span>
-          </div>
-          <div
-            data-sal="slide-right"
-            data-sal-duration="500"
-            data-sal-easing="ease-in-out"
-            className="tool"
-          >
-            <div>
-              <Agile />
-            </div>
-            <span>Agile Development</span>
-          </div>
         </div>
       </div>
       <div className="skills-details-frameworks">
@@ -250,17 +201,6 @@ const SkillSection = () => (
               <ReactJS />
             </div>
             <span>React</span>
-          </div>
-          <div
-            data-sal="slide-right"
-            data-sal-duration="500"
-            data-sal-easing="ease-in-out"
-            className="framework"
-          >
-            <div>
-              <Angular />
-            </div>
-            <span>Angular</span>
           </div>
           <div
             data-sal="slide-left"
