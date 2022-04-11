@@ -8,6 +8,13 @@ Among many other things, it contains some side projects I'm proud of, links to w
 
 _It undergoes fixes and improvements in the design, performance, accessibilty, compatibility, responsiveness & content whenever I have time to work on it/want to rebrand myself._
 
+### Tech Stack  🔧 
+- JavaScript
+- Gatsby (React + GraphQL)
+- Sass
+- Circle CI
+- Heroku
+
 <p align="center">
   <a href="https://dan-bamikiya.herokuapp.com/">
     <img alt="Dan Bamikiya" src="./src/images/front.png" />
