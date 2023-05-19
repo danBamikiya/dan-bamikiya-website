@@ -1,5 +1,124 @@
 [
   {
+    "title": "StoryBooks",
+    "subtitle": "Built with: Javascript, ExpressJS, Handlebars, CSS3, MongoDB, Heroku, Docker, Terraform and some love.",
+    "descriptionTheme": "inherit",
+    "image": "storybooks.png",
+    "alt": "StoryBooks",
+    "github": "https://github.com/danBamikiya/storybooks",
+    "demo": "https://storybooks-web-app.herokuapp.com",
+    "tags": {
+      "languages": ["Javascript", "CSS3", "HCL"],
+      "frameworks": ["ExpressJS", "Materialize CSS"],
+      "tools": ["Docker", "Terraform", "Github Actions"],
+      "databases": ["MongoDB"],
+      "hosting": ["Heroku"]
+    }
+  },
+  {
+    "title": "Movie Finder",
+    "subtitle": "Built with: Typescript, Sass, HTML5, Webpack and some love.",
+    "descriptionTheme": "inherit",
+    "image": "movie-finder.png",
+    "alt": "Movie Finder",
+    "github": "https://github.com/danBamikiya/movie-finder",
+    "demo": "https://danbamikiya.github.io/movie-finder/",
+    "tags": {
+      "languages": ["Typescript", "Sass", "HTML5"],
+      "tools": ["Webpack", "Github Actions"],
+      "hosting": ["Github Pages"]
+    }
+  },
+  {
+    "title": "Dan Token",
+    "subtitle": "Built with: Solidity, TypeScript, Hardhat, Infura and some love.",
+    "descriptionTheme": "#888",
+    "image": "DanToken.png",
+    "alt": "Dan Token",
+    "github": "https://github.com/danBamikiya/DanToken",
+    "demo": "https://goerli.etherscan.io/address/0xE393933c5Ce44399F00e531874399aFeC6FA28d6",
+    "tags": {
+      "languages": ["Typescript", "Solidity"],
+      "frameworks": ["Hardhat"],
+      "tools": ["Hardhat"],
+      "hosting": ["Infura"]
+    }
+  },
+  {
+    "title": "Agoric VSCode Extension",
+    "subtitle": "Built with: TypeScript, NodeJS, Esbuild, Mocha and some love. (COMMISSIONED)",
+    "descriptionTheme": "#888",
+    "image": "agoric-vscode-extension.png",
+    "alt": "Agoric VSCode Extension",
+    "github": "https://github.com/danBamikiya/agoric-vscode-extension",
+    "demo": "https://marketplace.visualstudio.com/items?itemName=danbmky.agoric-vscode",
+    "tags": {
+      "languages": ["Typescript"],
+      "frameworks": ["Mocha"],
+      "tools": ["Esbuild"],
+      "hosting": ["VSCode Marketplace"]
+    }
+  },
+  {
+    "title": "VSCode Chameleon",
+    "subtitle": "Built with: TypeScript, NodeJS, Mocha, Github Actions and some love. (OPEN SOURCE)",
+    "descriptionTheme": "#888",
+    "image": "vscode-chameleon-extension.png",
+    "alt": "VSCode Chameleon",
+    "github": "https://github.com/timdeschryver/vscode-chameleon",
+    "demo": "https://marketplace.visualstudio.com/items?itemName=timdeschryver.vscode-chameleon",
+    "tags": {
+      "languages": ["Typescript"],
+      "frameworks": ["Mocha"],
+      "tools": ["Github Actions"],
+      "hosting": ["VSCode Marketplace"]
+    }
+  },
+  {
+    "title": "GCloud Github Action",
+    "subtitle": "Built with: Shell, Docker, Github Actions and some love. (OPEN SOURCE)",
+    "descriptionTheme": "#888",
+    "image": "gcloud-github-action.png",
+    "alt": "Gloud Github Action",
+    "github": "https://github.com/actions-hub/gcloud",
+    "demo": "https://github.com/marketplace/actions/google-cloud-platform-gcp-cli-gcloud",
+    "tags": {
+      "languages": ["Shell"],
+      "tools": ["Docker", "Github Actions"],
+      "hosting": ["Github Marketplace"]
+    }
+  },
+  {
+    "title": "Cuttlink",
+    "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform, NGINX and some love.",
+    "descriptionTheme": "#888",
+    "image": "cuttlink.png",
+    "alt": "Cuttlink",
+    "github": "https://github.com/danBamikiya/cuttlink",
+    "demo": "#",
+    "tags": {
+      "languages": ["Typescript", "CSS3", "HCL"],
+      "frameworks": ["ExpressJS", "AngularJS"],
+      "tools": ["Docker", "Terraform", "NGINX", "Github Actions"],
+      "databases": ["Redis", "PostgresSQL"]
+    }
+  },
+  {
+    "title": "My Portfolio",
+    "subtitle": "Built with: Javascript, Gatsby(React + GraphQL), Sass, Heroku and some love.",
+    "descriptionTheme": "#888",
+    "image": "front.png",
+    "alt": "My Portfolio",
+    "github": "https://github.com/danBamikiya/dan-bamikiya-website",
+    "demo": "/",
+    "tags": {
+      "languages": ["Javascript", "Sass", "GraphQL"],
+      "frameworks": ["React", "Gatsby"],
+      "tools": ["Circle CI"],
+      "hosting": ["Heroku"]
+    }
+  },
+  {
     "title": "Urban Stores",
     "subtitle": "Built with: Typescript, React, Redux, Sass, Firebase and some love.",
     "descriptionTheme": "inherit",
@@ -31,19 +150,41 @@
     }
   },
   {
-    "title": "StoryBooks",
-    "subtitle": "Built with: Javascript, ExpressJS, Handlebars, CSS3, MongoDB, Heroku, Docker, Terraform and some love.",
-    "descriptionTheme": "inherit",
-    "image": "storybooks.png",
-    "alt": "StoryBooks",
-    "github": "https://github.com/danBamikiya/storybooks",
-    "demo": "https://storybooks-web-app.herokuapp.com",
+    "title": "MERN-Docker Template",
+    "subtitle": "Built with: PowerShell, Shell, Docker and some love.",
+    "descriptionTheme": "#888",
+    "image": "mern-docker-template.png",
+    "alt": "MERN-Docker Template",
+    "github": "https://github.com/danBamikiya/mern-docker-setup",
+    "demo": "#",
     "tags": {
-      "languages": ["Javascript", "CSS3", "HCL"],
-      "frameworks": ["ExpressJS", "Materialize CSS"],
-      "tools": ["Docker", "Terraform", "Github Actions"],
-      "databases": ["MongoDB"],
-      "hosting": ["Heroku"]
+      "languages": ["PowerShell", "Shell"],
+      "tools": ["Docker"]
+    }
+  },
+  {
+    "title": "Multi-Sig Wallet",
+    "subtitle": "Built with: Solidity and some love.",
+    "descriptionTheme": "#888",
+    "image": "multisig-wallet.jpeg",
+    "alt": "Multi-Sig Wallet",
+    "github": "https://github.com/danBamikiya/MultiSig-Wallet",
+    "demo": "#",
+    "tags": {
+      "languages": ["Solidity"]
+    }
+  },
+  {
+    "title": "FullStack Arweave Blog",
+    "subtitle": "Built with: Typescript, JavaScript, Next.js, CSS and some love.",
+    "descriptionTheme": "#888",
+    "image": "fullstack-arweave-blog.jpeg",
+    "alt": "FullStack Arweave Blog",
+    "github": "https://github.com/danBamikiya/fullstack-arweave-blog/",
+    "demo": "https://sonar.warp.cc/#/app/contract/W-ad-sv4UjdfItJulZwwHyDZ0TyIWVq5v_KN5TcA8N0?network=testnet",
+    "tags": {
+      "languages": ["Typescript", "Javascript", "CSS3"],
+      "frameworks": ["Next.js"]
     }
   },
   {
@@ -59,50 +200,6 @@
       "frameworks": ["React"],
       "tools": ["Agora BuildKit"],
       "hosting": ["Netlify"]
-    }
-  },
-  {
-    "title": "My Portfolio",
-    "subtitle": "Built with: Javascript, Gatsby(React + GraphQL), Sass, Heroku and some love.",
-    "descriptionTheme": "#888",
-    "image": "front.png",
-    "alt": "My Portfolio",
-    "github": "https://github.com/danBamikiya/dan-bamikiya-website",
-    "demo": "/",
-    "tags": {
-      "languages": ["Javascript", "Sass", "GraphQL"],
-      "frameworks": ["React", "Gatsby"],
-      "tools": ["Circle CI"],
-      "hosting": ["Heroku"]
-    }
-  },
-  {
-    "title": "Movie Finder",
-    "subtitle": "Built with: Typescript, Sass, HTML5, Webpack and some love.",
-    "descriptionTheme": "inherit",
-    "image": "movie-finder.png",
-    "alt": "Movie Finder",
-    "github": "https://github.com/danBamikiya/movie-finder",
-    "demo": "https://danbamikiya.github.io/movie-finder/",
-    "tags": {
-      "languages": ["Typescript", "Sass", "HTML5"],
-      "tools": ["Webpack", "Github Actions"],
-      "hosting": ["Github Pages"]
-    }
-  },
-  {
-    "title": "Cuttlink",
-    "subtitle": "Built with: Typescript, Angular, CSS3, Redis, ExpressJS, Docker, Terraform, NGINX and some love. (IN DEVELOPMENT)",
-    "descriptionTheme": "#888",
-    "image": "cuttlink.png",
-    "alt": "Cuttlink",
-    "github": "https://github.com/danBamikiya/cuttlink",
-    "demo": "#",
-    "tags": {
-      "languages": ["Typescript", "CSS3", "HCL"],
-      "frameworks": ["ExpressJS", "AngularJS"],
-      "tools": ["Docker", "Terraform", "NGINX", "Github Actions"],
-      "databases": ["Redis", "PostgresSQL"]
     }
   }
 ]
