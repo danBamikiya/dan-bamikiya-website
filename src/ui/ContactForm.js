@@ -1,7 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
 
 import CLASS_NAMES from "../utils/constants/class-names"
-import CursorContext from "../contexts/cursorContext"
 import FORMSPREE_URL from "../config/formspree"
 
 const ContactForm = ({ setStatus, glassRefs }) => {
@@ -14,16 +13,7 @@ const ContactForm = ({ setStatus, glassRefs }) => {
     }, 1000)
   }
 
-  const [cursorState, setCursorState] = useContext(CursorContext)
-
   const handleMouseOver = () => {
-    setCursorState({
-      ...cursorState,
-      ...{
-        defaultColor: false,
-      },
-    })
-
     if (
       // Check if the referenced DOM elements already have the "sent" effect class before adding a "remove" effect class
       glassRefs.current[0].classList.contains("glass-circle-1-sent-effect")
@@ -46,15 +36,6 @@ const ContactForm = ({ setStatus, glassRefs }) => {
         setStatus("")
       }, 500)
     }
-  }
-
-  const handleMouseOut = () => {
-    setCursorState({
-      ...cursorState,
-      ...{
-        defaultColor: true,
-      },
-    })
   }
 
   const handleSubmit = e => {
@@ -97,8 +78,6 @@ const ContactForm = ({ setStatus, glassRefs }) => {
               id="name"
               onMouseOver={handleMouseOver}
               onFocus={handleMouseOver}
-              onMouseOut={handleMouseOut}
-              onBlur={handleMouseOut}
               autoComplete="off"
             />
             <label htmlFor="name"></label>
@@ -111,8 +90,6 @@ const ContactForm = ({ setStatus, glassRefs }) => {
               id="email"
               onMouseOver={handleMouseOver}
               onFocus={handleMouseOver}
-              onMouseOut={handleMouseOut}
-              onBlur={handleMouseOut}
               autoComplete="off"
             />
             <label htmlFor="email"></label>
