@@ -23,7 +23,7 @@ const PortfolioSection = () => {
       ref={sectionRef}
     >
       <div className="portfolio-heading">
-        <h1>Recent Work</h1>
+        <h1>Featured</h1>
         <h6 style={{ fontSize: "1.5rem" }}>Projects | Explorations</h6>
       </div>
       <div className="portfolio-details">
