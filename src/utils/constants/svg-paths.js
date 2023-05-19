@@ -19,6 +19,7 @@ import TailwindCSS from "../../../svgs/tailwindcss.svg"
 import Typescript from "../../../svgs/typescript.svg"
 import Webpack from "../../../svgs/webpack.svg"
 import Agile from "../../../svgs/agile.svg"
+import Kubernetes from "../../../svgs/kubernets.svg"
 import Terraform from "../../../svgs/terraformio-icon.svg"
 import HCL from "../../../svgs/hashicorp-configuration-language.svg"
 
@@ -44,6 +45,7 @@ export {
   Typescript,
   Webpack,
   Agile,
+  Kubernetes,
   Terraform,
   HCL,
 }

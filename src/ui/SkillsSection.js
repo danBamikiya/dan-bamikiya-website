@@ -19,6 +19,7 @@ import {
   Typescript,
   Webpack,
   Terraform,
+  Kubernetes,
 } from "../utils/constants/svg-paths"
 
 const SkillSection = () => (
@@ -141,6 +142,17 @@ const SkillSection = () => (
               <Terraform />
             </div>
             <span>Terraform</span>
+          </div>
+          <div
+            data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="tool"
+          >
+            <div>
+              <Kubernetes />
+            </div>
+            <span>Kubernetes</span>
           </div>
           <div
             data-sal="slide-right"
