@@ -26,8 +26,12 @@ const AboutSection = () => (
         <h6>Myself</h6>
       </div>
       <p>
-        Hello visitor, My name is Dan, I deliver beautiful Web, Mobile & Desktop
-        experiences as a Frontend Engineer. I also{" "}
+        Hello visitor, my name is Dan, a frontend-focused full-stack engineer.
+      </p>
+      <p>
+        For the last 4+ years, I've shipped carefully engineered, high-quality
+        developer (DevX) and user (UX) experiences between Madrid, Belgium,
+        Portugal, San Francisco and Lagos. I also{" "}
         <a
           href={LINKS.SPEAKING}
           className="about-portfolio-link"
@@ -36,7 +40,11 @@ const AboutSection = () => (
         >
           speak
         </a>{" "}
-        and I'm an open source sustainer and an incoming Web3 engineer.
+        and I'm an open source sustainer 🛠.
+      </p>
+      <p>
+        I get excited to talk about web engineering, developer experience,
+        frontend tooling, CSS architecture, web3 and AI 🎤.
       </p>
       <p>
         Feel free to explore this website and check out my{" "}
@@ -45,7 +53,7 @@ const AboutSection = () => (
         </Link>
         .
       </p>
-      <p>You can view my open source work at my github page.</p>
+      <p>View my years of open source work at my github page.</p>
       <div className="about-social-media">
         <ul className="nav-list">
           <li>
