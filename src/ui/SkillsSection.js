@@ -20,6 +20,13 @@ import {
   Webpack,
   Terraform,
   Kubernetes,
+  PostgreSQL,
+  AWS,
+  Go,
+  NextJS,
+  Solidity,
+  NestJS,
+  VueJS,
 } from "../utils/constants/svg-paths"
 
 const SkillSection = () => (
@@ -94,6 +101,28 @@ const SkillSection = () => (
             </div>
             <span>Typescript</span>
           </div>
+          <div
+            data-sal="slide-left"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="language"
+          >
+            <div>
+              <Solidity />
+            </div>
+            <span>Solidity</span>
+          </div>
+          <div
+            data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="language"
+          >
+            <div>
+              <Go />
+            </div>
+            <span>Go</span>
+          </div>
         </div>
       </div>
       <div className="skills-details-tools">
@@ -155,7 +184,7 @@ const SkillSection = () => (
             <span>Kubernetes</span>
           </div>
           <div
-            data-sal="slide-right"
+            data-sal="slide-left"
             data-sal-duration="500"
             data-sal-easing="ease-in-out"
             className="tool"
@@ -183,12 +212,23 @@ const SkillSection = () => (
             className="tool"
           >
             <div>
+              <PostgreSQL />
+            </div>
+            <span>PostgreSQL</span>
+          </div>
+          <div
+            data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="tool"
+          >
+            <div>
               <MongoDB />
             </div>
             <span>MongoDB</span>
           </div>
           <div
-            data-sal="slide-right"
+            data-sal="slide-left"
             data-sal-duration="500"
             data-sal-easing="ease-in-out"
             className="tool"
@@ -198,13 +238,24 @@ const SkillSection = () => (
             </div>
             <span>Redis</span>
           </div>
+          <div
+            data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="tool"
+          >
+            <div>
+              <AWS />
+            </div>
+            <span>AWS</span>
+          </div>
         </div>
       </div>
       <div className="skills-details-frameworks">
         <span>Frameworks</span>
         <div>
           <div
-            data-sal="slide-left"
+            data-sal="slide-right"
             data-sal-duration="500"
             data-sal-easing="ease-in-out"
             className="framework"
@@ -257,6 +308,39 @@ const SkillSection = () => (
               <TailwindCSS />
             </div>
             <span>Tailwind CSS</span>
+          </div>
+          <div
+            data-sal="slide-left"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="framework"
+          >
+            <div>
+              <NextJS />
+            </div>
+            <span>NextJS</span>
+          </div>
+          <div
+            data-sal="slide-right"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="framework"
+          >
+            <div>
+              <NestJS />
+            </div>
+            <span>NestJS</span>
+          </div>
+          <div
+            data-sal="slide-left"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-out"
+            className="framework"
+          >
+            <div>
+              <VueJS />
+            </div>
+            <span>VueJS</span>
           </div>
         </div>
       </div>
