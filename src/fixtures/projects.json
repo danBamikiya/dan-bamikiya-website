@@ -175,16 +175,17 @@
     }
   },
   {
-    "title": "FullStack Arweave Blog",
-    "subtitle": "Built with: Typescript, JavaScript, Next.js, CSS and some love.",
-    "descriptionTheme": "#888",
-    "image": "fullstack-arweave-blog.jpeg",
-    "alt": "FullStack Arweave Blog",
-    "github": "https://github.com/danBamikiya/fullstack-arweave-blog/",
-    "demo": "https://sonar.warp.cc/#/app/contract/W-ad-sv4UjdfItJulZwwHyDZ0TyIWVq5v_KN5TcA8N0?network=testnet",
+    "title": "Soundchat",
+    "subtitle": "Built with: Typescript, React, Redux, GraphQL, ExpressJS, TailwindCSS, Docker and some love.",
+    "descriptionTheme": "inherit",
+    "image": "soundchat.png",
+    "alt": "Soundchat",
+    "github": "https://github.com/danBamikiya/soundchat",
+    "demo": "#",
     "tags": {
-      "languages": ["Typescript", "Javascript", "CSS3"],
-      "frameworks": ["Next.js"]
+      "languages": ["Typescript", "GraphQL", "Shell", "PowerShell"],
+      "frameworks": ["React", "ExpressJS", "TailwindCSS"],
+      "tools": ["Docker"]
     }
   },
   {
@@ -200,6 +201,19 @@
       "frameworks": ["React"],
       "tools": ["Agora BuildKit"],
       "hosting": ["Netlify"]
+    }
+  },
+  {
+    "title": "FullStack Arweave Blog",
+    "subtitle": "Built with: Typescript, JavaScript, Next.js, CSS and some love.",
+    "descriptionTheme": "#888",
+    "image": "fullstack-arweave-blog.jpeg",
+    "alt": "FullStack Arweave Blog",
+    "github": "https://github.com/danBamikiya/fullstack-arweave-blog/",
+    "demo": "https://sonar.warp.cc/#/app/contract/W-ad-sv4UjdfItJulZwwHyDZ0TyIWVq5v_KN5TcA8N0?network=testnet",
+    "tags": {
+      "languages": ["Typescript", "Javascript", "CSS3"],
+      "frameworks": ["Next.js"]
     }
   }
 ]
