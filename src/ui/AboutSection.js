@@ -29,7 +29,7 @@ const AboutSection = () => (
         Hello visitor, my name is Dan, a frontend-focused full-stack engineer.
       </p>
       <p>
-        For the last 4+ years, I've shipped carefully engineered, high-quality
+        For the last 3+ years, I've shipped carefully engineered, high-quality
         developer (DevX) and user (UX) experiences between Madrid, Belgium,
         Portugal, San Francisco and Lagos. I also{" "}
         <a
